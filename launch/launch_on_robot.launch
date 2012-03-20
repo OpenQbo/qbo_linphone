@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="linphone" type="sound_play_killer.py" name="sound_play"/>
+  <node pkg="linphone" type="autocaller.py" name="autocaller">
+    <remap from="audio_device" to="robot/audio_device"/>
+  </node>
+</launch>
