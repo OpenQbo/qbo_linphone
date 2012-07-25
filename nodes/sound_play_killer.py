@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import roslib; roslib.load_manifest('linphone')
+import roslib; roslib.load_manifest('qbo_linphone')
 import rospy
 
 if __name__ == '__main__':
