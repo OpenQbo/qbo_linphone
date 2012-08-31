@@ -24,7 +24,9 @@ class Linphone():
     # True when (otherwise) infinite loops should end.
     def __init__(self,
                  audio_dev_id = "ALSA: default device",
-                 termination_condition = lambda: False):
+                 termination_condition = lambda: False,
+		 _host = '192.168.1.35',
+		 _botName = "default_botName"):
 
         self.termination_condition = termination_condition
 
@@ -57,7 +59,7 @@ class Linphone():
                 count += 1
                 exit_code = subprocess.call(["linphonecsh", "status", "hook"])
             if exit_code != 255:
-                check_output(["linphonecsh", "register", "--host","127.0.0.1","--username","robot","--password","robot"])
+                check_output(["linphonecsh", "register", "--host",_host,"--username",_botName,"--password","qbobot"])
                 self.autoanswer()
                 ready = True
 

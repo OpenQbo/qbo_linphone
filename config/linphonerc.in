@@ -19,7 +19,7 @@ audio_rtp_port=7078
 video_rtp_port=9078
 audio_jitt_comp=60
 video_jitt_comp=0
-nortp_timeout=5
+nortp_timeout=3600
 
 [sound]
 remote_ring=/usr/share/sounds/linphone/ringback.wav
@@ -98,8 +98,8 @@ passwd=robot
 
 [proxy_0]
 reg_proxy=sip:localhost
-reg_identity=sip:test3@localhost
-reg_expires=3600
+reg_identity=sip:bRvf@192.168.1.36
+reg_expires=1500
 reg_sendregister=1
 publish=0
 dial_escape_plus=0
@@ -107,7 +107,7 @@ dial_escape_plus=0
 [call_log_0]
 dir=0
 status=1
-from=<sip:test3@localhost>
+from=<sip:test222@localhost>
 to=<sip:1000@localhost>
 start_date=Thu Sep 22 13:48:15 2011
 duration=2
@@ -115,7 +115,7 @@ duration=2
 [call_log_1]
 dir=0
 status=1
-from=<sip:test3@localhost>
+from=<sip:test333@localhost>
 to=<sip:1000@localhost>
 start_date=Thu Sep 22 13:47:35 2011
 duration=1
